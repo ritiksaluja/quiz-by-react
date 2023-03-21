@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+    padding: 10px 10px;
+}
+.nav ul {
+    display: flex;
+    list-style: none;  
+}
+.nav ul li a{
+     padding: 0px 50px;
+    text-decoration: none;
+}
+.login{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #006a86;
+
+}
+.start{
+    width: 50%;
+}
+.start img{
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+}
+.form{
+    margin: auto;
+    
+   
+}
+.form input{
+    margin: 20px 40px; 
+    padding: 10px 10px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.form button{
+    background-color: black;
+    color: white;
+    margin: 20px 80px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+.signin{
+    width: 100Vw;
+    height: 100Vh;
+    background-color:#006a86 ;
+    text-align: center;
+}
+.signin h1{
+    padding-top: 3.5rem;
+    color: white;
+}
+.signin form {
+    margin-top: 3.5rem;
+}
+.signin input{
+    margin: 20px 40px; 
+    padding: 10px 60px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+.signin button{
+    background-color: black;
+    color: white;
+    margin: 20px 15px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid black;
+
+}
+.choose{
+    height: 100vh;
+    width: 100vw;
+    background-color:#006a86 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.choose button{
+    width: 30vw;
+    background-color:white;
+    color:#006a86;
+    margin: 20px 15px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid black;
+    margin-top: 6rem;
+  
+
+}
