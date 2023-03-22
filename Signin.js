@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -6,19 +6,27 @@ function Signin() {
     const [name , setname] = useState()
     const [email , setemail] = useState()
     const [password , setpassword] = useState()
+    const [form , setformd] = useState([])
     const navigate = useNavigate() 
+    
      function Createuser(e){
         e.preventDefault()
-        localStorage.setItem("username" ,JSON.stringify(name))
-        localStorage.setItem("useremail" ,JSON.stringify(email))
-        localStorage.setItem("userpassword" ,JSON.stringify(password))
+        const details = {
+            name: name ,
+            email: email, 
+            password: password
+        }
+        // console.log(details)
+        form.push(details)
+      
+        localStorage.setItem("details" , JSON.stringify(form))
         setname('')
         setemail('')
         setpassword('')
+        alert("user created ")
         navigate("/Loginpage")
-
-        // console.log( name , email  , password)
      }
+    
   return (
     <div className='signin'>
 
